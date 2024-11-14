@@ -1,9 +1,9 @@
 return {
 	"lewis6991/gitsigns.nvim",
-	opts = function()
+	opts = {
 		signs = {
 			delete = { text = "󰍵" },
 			changedelete = { text = "󱕖" },
-		}
-	end,
+		},
+	},
 }
