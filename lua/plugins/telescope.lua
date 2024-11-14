@@ -6,5 +6,5 @@ return {
 		"nvim-telescope/telescope-fzf-native.nvim",
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-web-devicons",
-	}
+	},
 }
