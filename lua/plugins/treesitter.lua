@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "lua", "terraform", "hcl", "ninja", "rst" },
+    ensure_installed = { "lua", "terraform", "hcl", "markdown", "markdown_inline" },
 
     highlight = {
       enable = true,

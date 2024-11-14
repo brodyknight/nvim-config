@@ -20,3 +20,5 @@ map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "telescope git 
 map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "telescope pick hidden term" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
 
+-- toggle-checkbox.nvim
+map("n", "<leader>tt", ":lua require('toggle-checkbox').toggle()<CR>")
