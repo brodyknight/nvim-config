@@ -1,5 +1,6 @@
 return {
   "michaelb/sniprun",
+  event = "VeryLazy",
   branch = "master",
 
   build = "sh install.sh",

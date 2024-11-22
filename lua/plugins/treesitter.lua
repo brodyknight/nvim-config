@@ -1,7 +1,16 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  event = { "BufReadPost", "BufNewFile" },
+  cmd = {
+    "TSInstall",
+    "TSBufEnable",
+    "TSBufDisable",
+    "TSModuleInfo"
+  },
   opts = {
     ensure_installed = { "lua", "terraform", "hcl", "markdown", "markdown_inline" },
+    sync_install = false, -- synchronous installations
+    auto_install = true,
 
     highlight = {
       enable = true,
