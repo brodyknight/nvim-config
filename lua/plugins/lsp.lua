@@ -123,6 +123,7 @@ return {
       ensure_installed = {
         "shellcheck",
         "shfmt",
+        "ansible-lint"
       }
     }
   }
