@@ -43,6 +43,9 @@ return {
           "svelte",
           "ansiblels",
           "jsonls",
+          "svelte",
+          "powershell_es",
+          "lemminx",
         },
         handlers = {
           function(server_name) -- default handler (optional)
@@ -73,6 +76,12 @@ return {
             require("lspconfig").terraformls.setup({
               capabilities = capabilities,
               cmd = { "terraform-ls", "serve", "2>/dev/null" }, -- Suppress stderr
+            })
+          end,
+          ["pyright"] = function()
+            require("lspconfig").pyright.setup({
+              capabilities = capabilities,
+              root_dir = require("lspconfig.util").root_pattern("pyproject.toml", "setup.py", ".git"),
             })
           end,
         },
@@ -125,7 +134,8 @@ return {
       ensure_installed = {
         "shellcheck",
         "shfmt",
-        "ansible-lint"
+        "ansible-lint",
+        "xmlformatter"
       }
     }
   }
