@@ -5,6 +5,7 @@ return {
 			lua = { "stylua" },
 			python = { "ruff" },
 			markdown = { "markdownlint" },
+      xml = { "xmlformatter" },
 		},
 	},
 }
