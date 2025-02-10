@@ -41,6 +41,7 @@ return {
       require("fidget").setup({})
       require("mason").setup()
       require("mason-lspconfig").setup({
+        automatic_installation = true,
         ensure_installed = {
           "lua_ls",
           "rust_analyzer",
@@ -103,7 +104,7 @@ return {
 
       local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
-      cmp.setup({
+      cmp.setup({ ---@diagnostic disable-line: redundant-parameter
         snippet = {
           expand = function(args)
             require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
@@ -135,7 +136,7 @@ return {
           focusable = false,
           style = "minimal",
           border = "rounded",
-          source = "always",
+          source = true,
           header = "",
           prefix = "",
         },
