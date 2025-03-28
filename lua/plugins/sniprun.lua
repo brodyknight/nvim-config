@@ -1,6 +1,6 @@
 return {
   "michaelb/sniprun",
-  event = "VeryLazy",
+  cmd = { "SnipRun", "SnipInfo", "SnipReset", "SnipReplMemoryClean" },
   branch = "master",
 
   build = "sh install.sh",
