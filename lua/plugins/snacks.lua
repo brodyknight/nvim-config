@@ -1,5 +1,6 @@
 return {
   "folke/snacks.nvim",
+  event = "VimEnter",
   opts = {
     dashboard = {
       preset = {
