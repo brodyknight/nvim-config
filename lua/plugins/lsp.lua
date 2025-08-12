@@ -109,7 +109,8 @@ return {
         "shellcheck",
         "shfmt",
         "ansible-lint",
-        "xmlformatter"
+        "xmlformatter",
+        "markdownlint"
       }
     }
   },
