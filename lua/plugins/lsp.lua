@@ -110,7 +110,7 @@ return {
         "shfmt",
         "ansible-lint",
         "xmlformatter",
-        "markdownlint"
+        "prettierd"
       }
     }
   },
