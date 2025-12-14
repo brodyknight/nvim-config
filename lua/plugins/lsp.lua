@@ -104,6 +104,7 @@ return {
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     dependencies = { "williamboman/mason.nvim" },
+    event = { "BufReadPre", "BufNewFile" },
     opts = {
       ensure_installed = {
         "shellcheck",
