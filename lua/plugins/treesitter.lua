@@ -8,7 +8,7 @@ return {
     "TSModuleInfo"
   },
   opts = {
-    ensure_installed = { "lua", "terraform", "hcl", "markdown", "markdown_inline" },
+    ensure_installed = { "lua", "terraform", "hcl", "markdown", "markdown_inline", "go" },
     sync_install = false, -- synchronous installations
     auto_install = true,
 
