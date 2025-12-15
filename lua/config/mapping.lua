@@ -28,4 +28,4 @@ map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find
 map("n", "<leader>tt", ":lua require('toggle-checkbox').toggle()<CR>")
 
 -- nvim-tree.lua
-map("n", "<leader>\\", "<cmd>NvimTreeFocus<cr>", { desc = "Focus nvimtree" })
+map("n", "<leader>\\", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
