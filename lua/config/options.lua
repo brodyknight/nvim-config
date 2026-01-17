@@ -2,7 +2,7 @@ local opt = vim.opt
 
 -- Line numbers
 opt.number = true		-- Enable line numbers
-opt.relativenumber = false	-- Enable relative line numbers
+opt.relativenumber = true	-- Enable relative line numbers
 opt.numberwidth = 2		-- Minimum columns for line numbers
 
 -- Tabs / Indentation
